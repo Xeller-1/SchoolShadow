@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="16f6956ecde34820ad4288df8d62affe" Name="Diagram1">
+        <EntityTypeShape EntityType="ScheduleSystemModel.Calls" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.ClassTypes" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Constraints" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Curriculum" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Events" Width="1.5" PointX="6" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Groups" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Priorities" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Rooms" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Schedule" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Settings" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Subgroups" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Subjects" Width="1.5" PointX="1.5" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Teachers" Width="1.5" PointX="1.5" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Users" Width="1.5" PointX="1.5" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ScheduleSystemModel.Weeks" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Schedule_ClassTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Curriculum_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Curriculum_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK__Events__Events_G__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK__Events__Events_R__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK__Subgroups__Subgr__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Schedule_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Rooms_Teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Schedule_Rooms" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Schedule_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Schedule_Teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Schedule_Weeks" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Teachers_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="ScheduleSystemModel.FK_Teachers_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

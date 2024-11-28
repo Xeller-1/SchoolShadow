@@ -1,0 +1,39 @@
+﻿<Window x:Class="SchoolShadow.AddRoomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolShadow"
+        mc:Ignorable="d"
+        Title="Добавить аудиторию" Height="300" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Поле для названия аудитории -->
+        <TextBlock Text="Название аудитории:" Grid.Row="0" VerticalAlignment="Center" Margin="0,5" />
+        <TextBox x:Name="RoomNameTextBox" Grid.Row="0" Margin="150,5,0,5" />
+
+        <!-- Поле для вместимости аудитории -->
+        <TextBlock Text="Вместимость:" Grid.Row="1" VerticalAlignment="Center" Margin="0,5" />
+        <TextBox x:Name="RoomCapacityTextBox" Grid.Row="1" Margin="150,5,0,5" />
+
+        <!-- Поле для оборудования аудитории -->
+        <TextBlock Text="Оборудование:" Grid.Row="2" VerticalAlignment="Center" Margin="0,5" />
+        <TextBox x:Name="RoomEquipmentTextBox" Grid.Row="2" Margin="150,5,0,5" />
+
+        <!-- Выпадающий список для выбора преподавателя -->
+        <TextBlock Text="Закрепить за преподавателем:" Grid.Row="3" VerticalAlignment="Center" Margin="0,5" />
+        <ComboBox x:Name="TeacherComboBox" Grid.Row="3" Margin="150,5,0,5" /> 
+
+        
+        <!-- Кнопка для добавления -->
+        <Button Content="Добавить" Grid.Row="5" Width="100" Height="30" HorizontalAlignment="Right"
+                Click="AddRoomButton_Click" Margin="0,10,0,0" />
+    </Grid>
+</Window>
